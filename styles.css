@@ -2,25 +2,44 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f2f2f2;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
+    background-image: url('assets/image.png');
+    background-size: cover;
+    background-position: center top;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    padding-top: 140px;
 }
 
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
+    transform: translateY(-50%);
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 767px) {
+    .container {
+      position: relative;
+      top: unset;
+      left: unset;
+      transform: none;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
 
 h1 {
     font-size: 36px;
-    color: #333;
+    color: #c7c7c7;
 }
 
 p {
     font-size: 18px;
-    color: #666;
+    color: #c7c7c7;
     margin-bottom: 30px;
 }
 
@@ -42,10 +61,45 @@ p {
 .labels {
     display: flex;
     justify-content: center;
-    color: #666;
+    color: #c7c7c7;
 }
 
 .labels span {
     margin: 0 10px;
     font-size: 14px;
 }
+
+img {
+    /* Size properties */
+    width: 500px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+  
+    /* Display properties */
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+  
+    /* Shadow properties */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  
+    /* Transition properties */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  
+    /* Animation properties */
+    animation: scaleAnimation 0.5s ease-in-out;
+    animation-delay: 0.3s;
+  }
+  
+  img:hover {
+    transform: scale(1.05); /* Slightly scale up the image on hover */
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes scaleAnimation {
+    0% {
+      transform: scale(0.5); /* Start with a smaller scale */
+    }
+    100% {
+      transform: scale(1); /* End with the original scale */
+    }
+  }
