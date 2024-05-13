@@ -5,13 +5,16 @@ export default {
     extend: {
       colors: {
         color: {
-          1: "",
-          2: "",
+          1: "#176BCB",
+          2: "#FFC700",
           3: "",
           4: "",
           5: "",
           6: "",
         },
+      },
+      height:{
+        '90':'35rem'
       },
       fontFamily: {
         'sans': ['Montserrat', 'sans-serif'],

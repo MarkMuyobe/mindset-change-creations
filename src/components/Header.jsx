@@ -9,31 +9,34 @@ const Header = () => {
       <nav className="container mx-auto flex justify-between items-center">
         <div>
           <a href="#" className="text-white font-bold text-xl">
-            My App
+            Mindset Change Creations
           </a>
         </div>
         <ul className="flex space-x-4">
           <li>
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="#" className="text-gray-300 montserrat-medium hover:text-white">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="#" className="text-gray-300 montserrat-medium hover:text-white">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="text-gray-300 hover:text-white">
+            <a href="#" className="text-gray-300 montserrat-medium hover:text-white">
               Services
             </a>
           </li>
-          <li>
-            <a href="#" className="text-gray-300 hover:text-white">
-              Contact
-            </a>
-          </li>
         </ul>
+
+            {/* <a href="#" className="text-gray-300 hover:text-white">
+              Contact
+            </a> */}
+
+          <button className="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Get Started
+          </button>
       </nav>
     </header>
     // <div className="fixed top-0 w-full z-50 bg-sky-950 lg:bg-sky-950 backdrop-blur-sm border-b border-neutral-600 lg:backdrop-blur-sm ">
